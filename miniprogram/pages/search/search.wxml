@@ -1,0 +1,19 @@
+<view class="search_blog">
+    <view class="search_content">
+        <view class="search_btn" bindtap="searchShow">
+            <image class="" src="../../images/find/search.png"></image>
+            <text class="">找感兴趣的事情</text>
+        </view>
+    </view>
+    <view class="{{isShowSearch==true?'show search_really':'search_really'}}">
+        <view class="search_really_input">
+            <image class="" src="../../images/find/search.png"></image>
+            <input type="text" placeholder="搜索" bindconfirm="searchBtn" bindinput="onInput" value="{{content}}" />
+            <text class="" bindtap="searchHiddle">取消</text>
+        </view>
+    </view>
+    
+    <block wx:for="{{blogList}}" wx:key="_id">
+        <y-others-blog blog="{{item}}" data-blogId="{{item._id}}" bindtap="goBlogDetail"></y-others-blog>
+    </block>
+</view>

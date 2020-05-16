@@ -1,0 +1,11 @@
+<view class="find_interest">
+		<view class="interest_bar">
+				<text class="">{{interest}}</text>
+				<view class="">
+						更多
+						<image class="" src="../../images/find/right.png"></image>
+				</view>
+		</view>
+		<view class="interest_show">暂无</view>
+		<view class="interest_attention">+关注以上</view>
+</view>

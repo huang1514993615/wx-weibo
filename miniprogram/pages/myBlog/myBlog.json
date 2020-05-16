@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "y-others-blog": "/components/others-blog/others-blog"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "个人博客"
+}

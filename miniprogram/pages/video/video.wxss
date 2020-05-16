@@ -1,0 +1,89 @@
+.search_blog{
+    background-color: #EDEDED;
+}
+.search_content{
+    background-color:#FEFEFE;
+    padding-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+.play{
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+    left: -2vw;
+    right: 7vw;
+    top: 1.5vw;
+    
+}
+.search_btn{
+    margin-left: 1%;
+    width: 72%;
+    border-radius: 50rpx;
+    background-color: #F0F0F0;
+    color: #727272;
+    font-size: 3vw;
+    padding: 3px 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.search_btn image{
+    margin-top: 1vw;
+    width: 4vw;
+    height: 4vw;    
+}
+.search_btn text{
+    position: relative;
+    top: -6rpx;
+}
+.search_really{
+    z-index: 100;
+    transition: all 0.2s linear;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 0%;
+    background-color: #EDEDED;
+}
+.search_really_input{
+    background-color: #FAFAFA;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 2vw 2vw 2vw;
+
+}
+.search_really_input image{
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    left: 4.2vw;
+    top: 6.6vw;
+}
+.search_really_input input{
+    width: 70%;
+    border-radius: 20rpx;
+    background-color: #E2E3E5;
+    color: #000;
+    padding: 1vw 8vw;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.search_really_input text{
+    line-height: 7.8vw;
+}
+.show{
+    height: 100%;
+}
+.video-bottom{
+    position: relative;
+    width: 100%;
+    height: 70rpx;
+    text-align: center;
+    background-color: #fff;
+    line-height: 70rpx;
+    font-size: 32rpx;
+    color:rgba(54, 83, 114, 0.885);
+    margin-bottom: 10rpx;
+}

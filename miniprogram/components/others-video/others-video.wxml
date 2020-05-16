@@ -1,0 +1,33 @@
+<view class="user" wx:if="{{isShow}}">
+    <view class="user_nav">
+        <view class="user_info">
+            <image class="" src="{{video.avatarUrl}}"></image>
+            <view class="">
+                <text class="nickName">{{video.nickName}}</text>
+                <text wx:if="{{detail}}" class="createTime">{{video.createTime}}</text>
+            </view>
+        </view>
+        <view class="user_vanish" catch:tap="dontShow">
+            <image class="" src="../../images/others-blog/vanish.png"></image>
+        </view>
+    </view>
+    <view class="blog-img" catch:tap="runVideo">
+        <video id="myVideo" src="{{video.fileID}}" enable-play-gesture="true" show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"></video>
+    </view>
+    <view class="blog-title">{{video.title}}</view>
+    <view class="blog-content">{{content}}</view>
+    <view class="blog-more">
+        <view class="" hover-class="none">
+            <image class="" src="../../images/others-blog/share.png"></image>
+            <text class="">{{video.share.length}}</text>
+        </view>
+        <view class="" hover-class="none">
+            <image class="" src="../../images/others-blog/talk.png"></image>
+            <text class="">{{video.comment.length}}</text>
+        </view>
+        <view class="" hover-class="none">
+            <image class="" src="../../images/others-blog/goods.png"></image>
+            <text class="">{{video.goods.length}}</text>
+        </view>
+    </view>
+</view>

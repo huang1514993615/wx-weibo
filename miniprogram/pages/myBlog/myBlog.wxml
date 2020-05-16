@@ -1,0 +1,4 @@
+<block wx:for="{{myBlog}}" wx:key="_id">
+    <y-others-blog blog="{{item}}" data-blogId="{{item._id}}" bindtap="goUpdateBlogg"></y-others-blog>
+</block>
+<view class="blog-bottom" bindtap="onUpLoad">{{blogUpContent}}</view>

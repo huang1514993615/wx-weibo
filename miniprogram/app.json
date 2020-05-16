@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/video/video",
+    "pages/mine/mine",
+    "pages/find/find",
+    "pages/setMineInfo/setMineInfo",
+    "pages/wrtieBlog/wrtieBlog",
+    "pages/blog-detail/blog-detail",
+    "pages/writeVideo/writeVideo",
+    "pages/video-detail/video-detail",
+    "pages/myBlog/myBlog",
+    "pages/updateBlog/updateBlog"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00B26A",
+    "navigationBarTitleText": "微博",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#00B26A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tarBar/index.png",
+        "selectedIconPath": "/images/tarBar/indexselect.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/images/tarBar/video.png",
+        "selectedIconPath": "/images/tarBar/videoselect.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/images/tarBar/search.png",
+        "selectedIconPath": "/images/tarBar/searchselect.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "/images/tarBar/mine.png",
+        "selectedIconPath": "/images/tarBar/mineselect.png"
+      }
+    ]
+  }
+}

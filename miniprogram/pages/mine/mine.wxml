@@ -1,0 +1,59 @@
+<view class="mine">
+    <view class="mine_bar">
+        <view class="mine_add" bindtap="findFriend">
+            <image class="" src="../../images/mine/add.png"></image>
+        </view>
+        <view class="mine_title">我</view>
+        <view class="mine_set">
+            <image class="" src="../../images/mine/scan.png"></image>
+            <image class="" src="../../images/mine/set.png" bindtap="setMineInfo"></image>
+        </view>
+    </view>
+    <view class="mine_info">
+        <view class="mine_info_me">
+            <view class="info_my">
+                <view class="info_my_image">
+                    <image class="" src="{{myImage}}"></image>
+                </view>
+                <view class="info_my_name">
+                    <text class="my_name">{{myName}}</text>
+                    <text class="my_intro">国籍：{{myCountry}}</text>
+                </view>
+            </view>
+            <view class="mine_vip">
+                <image wx:if="{{!vip}}" class="" src="{{vipImage}}"></image>
+                <image wx:else class="" src="{{superVipImage}}"></image>
+                <text class="mine_vip_show">会员</text>
+            </view>
+        </view>
+        <view class="mine_info_intro">
+            <view class="intro_blogs" bind:tap="goMineBlog">
+                <view class="intro_blogs_num">{{myBlogCount}}</view>
+                <view class="intro_blogs_name">博客</view>
+            </view>
+            <view class="intro_attention">
+                <view class="intro_attention_num">{{attention}}</view>
+                <view class="intro_attention_name">关注</view>
+            </view>
+            <view class="intro_fans">
+                <view class="intro_fans_num">{{fans}}</view>
+                <view class="intro_fans_name">粉丝</view>
+            </view>
+        </view>
+    </view>
+    <view class="mine_more">
+        <view class="mine_more_first">
+            <navigator wx:for="{{mineMoreOne}}" class="mine_navigator" target="" url="" wx:key="index">
+                <image class="" src="{{item.photo}}"></image>
+                <text class="">{{item.mean}}</text>
+            </navigator>
+        </view>
+        <view class="mine_more_second">
+            <navigator wx:for="{{mineMoreTwo}}" class="mine_navigator" target="" url="" wx:key="index">
+                <image class="" src="{{item.photo}}"></image>
+                <text class="">{{item.mean}}</text>
+            </navigator>
+        </view>
+    </view>
+    <y-login modalShow="{{modalShow}}" bind:loginsuccess="onloginSuccess" bind:loginfail="onloginFail"></y-login>
+</view>

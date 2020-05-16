@@ -1,0 +1,129 @@
+.bolg_detail{
+    background-color: #EEEEEE;
+}
+.comment_list{
+    margin-bottom: 11vw;
+}
+.user{
+    background-color: #fff;
+    margin-top: 3vw;
+}
+.user_nav{
+    padding: 2vw 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+.user_info{
+    display: flex;
+    justify-content: space-between;
+}
+.user_info image{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+}
+.user_info view {
+    display: flex;
+    flex-direction: column;
+}
+.user_info view .nickName{
+    color: #FF4C00;
+    position: relative;
+    top: 2vw;
+    left: 2vw;
+    font-size: 3vw;
+}
+.user_info view .createTime{
+    color: #999999;
+    position: relative;
+    top: 3vw;
+    left: 1.5vw;
+    font-size: 2.5vw;
+}
+
+.user_vanish {
+    width: 10vw;
+    text-align: center;
+}
+.user_vanish image{
+    width: 3vw;
+    height: 3vw;
+}
+.blog-img{
+    padding: 2vw;
+    margin-bottom: 5vw;
+}
+.blog-img image{
+    width: 230rpx;
+    height: 230rpx;
+    margin-right: 10rpx;
+    margin-bottom: 0rpx;
+}
+ .blog .blog-img image:nth-child(3n){
+    margin-right: 0;
+}
+.blog-content{
+    margin: 20rpx;
+    font-size: 4vw;
+}
+.blog-more{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw 2vw;
+    border-top: 1px solid #ccc;
+}
+.blog-more view{
+    position: relative;
+
+}
+.blog-more image{
+    width: 5vw;
+    height: 5vw;
+    vertical-align: middle;
+    margin: 0 0.5vw;
+}
+.blog-more text{
+    font-size: 4vw;
+    color: #5F5F5F;
+    position: absolute;
+    bottom: -4rpx;
+}
+.blog-buttom{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #EEEEEE;
+    color: #5F5F5F;
+}
+.blog-buttom image{
+    width: 6vw;
+    height: 6vw;
+    vertical-align: top;
+    margin: 0 1.2vw;
+}
+.blog-buttom text{
+    font-size: 4vw;
+    color: #5F5F5F;
+}
+.blog-buttom .segmentation{
+    color: #C2C2C2;
+}
+.comment-content{
+    margin-top: 20rpx;
+    height: 150rpx;
+    text-align: left;
+    padding-left: 10rpx;
+}
+.send{
+    position: absolute;
+    right: 20rpx;
+    bottom: 10rpx;
+    background-color: #1296db;
+    padding: -1rpx 5rpx;
+    font-size: 28rpx;
+    color: #ffffff;
+}

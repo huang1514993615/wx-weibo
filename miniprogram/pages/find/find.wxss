@@ -1,0 +1,135 @@
+view{
+    box-sizing: border-box;
+}
+/* search_bar */
+.searchFriend{
+    background-color:#F2F2F2;
+}
+.search_bar{
+    background-color: #fff;
+    padding: 2vw 1vw;
+}
+.search_btn{
+    margin-left: 1%;
+    width: 98%;
+    border-radius: 50rpx;
+    background-color: #F0F0F0;
+    color: #727272;
+    font-size: 3vw;
+    padding: 3px 24px;
+    font-weight: 500;
+    text-align: center;
+}
+.search_btn image{
+    margin-top: 1vw;
+    width: 4vw;
+    height: 4vw;    
+}
+.search_btn text{
+    position: relative;
+    top: -6rpx;
+}
+.search_more{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 4vw;
+    
+}
+.search_more view{
+    width: 25vw;
+    margin: 2vw 0;
+    border-radius: 16rpx;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 2.5vw;
+}
+.search_more_up{
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+}
+.search_more_dowm{
+    font-size: 2.5vw;
+}
+.search_classify{
+    background-color: #E9DBFF;
+    color: #8F78C0;
+}
+.search_people{
+    background-color: #FFECDD;
+    color: #A9804F;
+}
+.search_bigV{
+    background-color: #CDF5FD;
+    color: #37B3D1;
+}
+.search_start{
+    background-color: #FCEFCD;
+    color: #C99517;
+}
+.search_media{
+    background-color: #FCE2FF;
+    color: #C578CC;
+}
+.search_address{
+    background-color: #D6FAF0;
+    color: #42B2A2;
+}
+/* search_territory */
+.search_territory{
+    margin-top: 3vw;
+    background-color: #fff;
+}
+.search_interest{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+    border-bottom: 1rpx solid #989898;
+}
+.search_interest text{
+    font-size: 4vw;
+}
+.search_interest image{
+    width: 4vw;
+    height: 4vw;
+    margin-top: 2vw;
+}
+.search_really{
+    z-index: 100;
+    transition: all 0.2s linear;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 0%;
+    background-color: #EDEDED;
+}
+.search_really_input{
+    background-color: #FAFAFA;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 2vw 2vw 2vw;
+
+}
+.search_really_input image{
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    left: 4.2vw;
+    top: 6.6vw;
+}
+.search_really_input input{
+    width: 70%;
+    border-radius: 20rpx;
+    background-color: #E2E3E5;
+    color: #000;
+    padding: 1vw 8vw;
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+.search_really_input text{
+    line-height: 7.8vw;
+}
+.show{
+    height: 100%;
+}

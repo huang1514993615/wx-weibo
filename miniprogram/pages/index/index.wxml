@@ -1,0 +1,30 @@
+<view class="index">
+    <view class="index_nav">
+        <view class="index_nav_bar">
+            <image class="" src="../../images/index/camera.png"></image>
+            <view class="">
+                <text class="" wx:for="{{navList}}" wx:key="{{index}}" data-index="{{index}}" class="{{listNum==index?'special':''}}" bindtap="changeListNum">
+                    {{item}}
+                </text>
+                <view class="{{listNum==1?'nav_bottom nav_move':'nav_bottom'}}"></view>
+            </view>
+            <image class="" src="../../images/index/write.png" bindtap="wrtieBlog"></image>
+        </view>
+    </view>
+    <swiper bindchange="changeNum" current="{{listNum}}">
+        <swiper-item>
+            <scroll-view style="height:100%" scroll-y="true" scroll-top="{{backToTop}}" bindscroll="scrolltop" scroll-with-animation="true">
+                <block wx:for="{{blogList}}" wx:key="_id">
+                    <y-others-blog blog="{{item}}" data-blogId="{{item._id}}" bindtap="goBlogDetail"></y-others-blog>
+                </block>
+                <view class="blog-bottom" bindtap="onUpLoad">{{blogUpContent}}</view>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item class="" item-id="" style="overflow: scroll;"></swiper-item>
+    </swiper>
+    <view class="go_top" hidden="{{isShow}}" bindtap="goTop">
+        <text class="go_top_top">返回</text>
+        <text class="">顶部</text>
+    </view>
+    <y-login modalShow="{{modalShow}}" bind:loginsuccess="onloginSuccess" bind:loginfail="onloginFail"></y-login>
+</view>

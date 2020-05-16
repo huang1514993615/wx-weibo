@@ -1,0 +1,10 @@
+<view class="blog_comment">
+    <view class="comment_photo">
+        <image class="" src="{{comment.avatarUrl}}"></image>
+    </view>
+    <view class="comment_more">
+        <text class="comment_nickname">{{comment.nickName}}</text>
+        <text class="comment_content">{{comment.content}}</text>
+        <view class="comment_bar">{{comment.createTime}}</view>
+    </view>
+</view>

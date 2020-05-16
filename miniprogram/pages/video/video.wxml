@@ -1,0 +1,21 @@
+<view class="">
+    <view class="search_content">
+        <view class="search_btn" bindtap="searchShow">
+            <image class="" src="../../images/find/search.png"></image>
+            <text class="">找有趣视频</text>
+        </view>
+        <image class="play" bindtap="wrtiePlay" src="../../images/video/play.png"></image>
+    </view>
+    <view class="{{isShowSearch==true?'show search_really':'search_really'}}">
+        <view class="search_really_input">
+            <image class="" src="../../images/find/search.png"></image>
+            <input type="text" placeholder="搜索" bindconfirm="searchBtn" bindinput="onInput" value="{{content}}" />
+            <text class="" bindtap="searchHiddle">取消</text>
+        </view>
+    </view>
+    <block wx:for="{{videoList}}">
+        <y-others-video video="{{item}}" data-videoId="{{item._id}}" bindtap="goVideoDetail"></y-others-video>
+    </block>
+    <view class="video-bottom" bindtap="onUpLoad">{{blogUpContent}}</view>
+    <y-login modalShow="{{modalShow}}" bind:loginsuccess="onloginSuccess" bind:loginfail="onloginFail"></y-login>
+</view>

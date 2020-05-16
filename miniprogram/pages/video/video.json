@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "y-login": "/components/login/login",
+    "y-others-video": "/components/others-video/others-video"
+  },
+  "navigationBarTitleText": "小视频",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

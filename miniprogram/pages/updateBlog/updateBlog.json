@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-bolg-comment": "/components/bolg-comment/bolg-comment"
+  },
+  "navigationBarTitleText": "修改博客"
+}

@@ -1,0 +1,33 @@
+.find_interest{
+    background-color: #fff;
+    margin-bottom: 3vw;
+}
+.interest_bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+.interest_bar text{
+    font-size: 3.5vw;
+    color: #636363;
+}
+.interest_bar view{
+    font-size: 3.5vw;
+    color: #636363;
+}
+.interest_bar image{
+    width: 3vw;
+    height: 3vw;
+    margin-top: 1.5vw;
+}
+.interest_show{
+    padding: 8vw 6vw;
+    text-align: center;
+    font-size: 40rpx;
+    border-bottom: 1rpx solid #E8E8E8;
+}
+.interest_attention{
+    padding: 2vw;
+    text-align: center;
+    color: #FC8101;
+}

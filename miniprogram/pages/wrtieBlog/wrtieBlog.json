@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-login": "/components/login/login"
+  },
+  "navigationBarTitleText": "发博客"
+}

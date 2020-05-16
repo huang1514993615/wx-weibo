@@ -1,0 +1,51 @@
+<view class="bolg_detail">
+		<view class="user">
+				<view class="user_nav">
+						<view class="user_info">
+								<image class="" src="{{blog.avatarUrl}}"></image>
+								<view class="">
+										<text class="nickName">{{blog.nickName}}</text>
+										<text wx:if="{{detail}}" class="createTime">{{blog.createTime}}</text>
+								</view>
+						</view>
+						<view class="user_vanish"></view>
+				</view>
+				<view class="blog-content">{{blog.content}}</view>
+				<view class="blog-img">
+						<block wx:for="{{blog.img}}" wx:key="index">
+								<!-- catch绑定事件可以阻止事件冒泡 -->
+								<image class="img" src="{{item}}" mode="aspectFill" catch:tap="onPreview" data-index="{{index}}" data-imgs="{{blog.img}}"></image>
+						</block>
+				</view>
+				<view class="blog-buttom">
+						<view class="" hover-class="none">
+								<image class="" src="../../images/others-blog/share.png"></image>
+								<text class="">转发</text>
+						</view>
+						<view class="segmentation">|</view>
+						<view class="" hover-class="none" bindtap="talkComment">
+								<image class="" src="../../images/others-blog/talk.png"></image>
+								<text class="">评论</text>
+						</view>
+						<view class="segmentation">|</view>
+						<view class="" hover-class="none" bindtap="giveGoods">
+								<image wx:if="{{isGoods}}" class="" src="../../images/others-blog/goodsed.png"></image>
+								<image wx:else class="" src="../../images/others-blog/goods.png"></image>
+								<text class="">赞</text>
+						</view>
+				</view>
+				<y-login modalShow="{{loginShow}}" bind:loginsuccess="onLoginsuccess" bind:loginfail="onLoginfail"></y-login>
+				<y-bottom-modal modalShow="{{modalShow}}" wx:if="{{modalShow}}">
+						<form slot="modal-content" report-submit="true" bindsubmit="onsend">
+								<!--  -->
+								<textarea name="content" class="comment-content" value="{{talkContent}}" placeholder="输入评论" fixed="{{true}}"></textarea>
+								<button class="send" form-type="submit">发送</button>
+						</form>
+				</y-bottom-modal>
+		</view>
+		<view class="comment_list">
+				<block wx:for="{{commentList}}" wx:key="{{item._id}}">
+						<y-bolg-comment comment="{{item}}"></y-bolg-comment>
+				</block>
+		</view>
+</view>

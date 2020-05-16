@@ -1,0 +1,22 @@
+.setMine{
+    height: 100%;
+    background-color: #EDEDED;  
+    padding: 3vw 0;
+}
+.setMine view{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+    background-color: #fff;
+}
+.setMine view image{
+    margin-top: 1vw;
+    width: 4vw;
+    height: 4vw;
+}
+.special_buttom{
+    border-bottom: 0.3vw solid #EAEAEA;
+}
+.special_top{
+    margin-top: 3vw;
+}

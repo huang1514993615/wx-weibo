@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "y-login": "/components/login/login",
+    "y-bolg-comment": "/components/bolg-comment/bolg-comment",
+    "y-bottom-modal": "/components/bottom-modal/bottom-modal"
+  },
+  "navigationBarTitleText": "正文"
+}

@@ -1,0 +1,44 @@
+<view class="setMine">
+    <view class="setMine_account special_buttom">
+        <text class="">账号管理</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account">
+        <text class="">账号与安全</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account special_top">
+        <text class="">青少年模式</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account special_top">
+        <text class="">会员专属设置</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account special_top special_buttom">
+        <text class="">推送通知设置</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account  special_buttom">
+        <text class="">屏蔽设置</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account  special_buttom">
+        <text class="">隐私设置</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account  special_buttom">
+        <text class="">通用设置</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account special_top  special_buttom">
+        <text class="">客服中心</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+    <view class="setMine_account   special_buttom">
+        <text class="">关于小程序</text>
+        <image class="" src="../../images/setMineInfo/arrow.png"></image>
+    </view>
+
+
+</view>

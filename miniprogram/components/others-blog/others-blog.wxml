@@ -1,0 +1,35 @@
+<view class="user" wx:if="{{isShow}}">
+    <view class="user_nav">
+        <view class="user_info">
+            <image class="" src="{{blog.avatarUrl}}"></image>
+            <view class="">
+                <text class="nickName">{{blog.nickName}}</text>
+                <text wx:if="{{detail}}" class="createTime">{{blog.createTime}}</text>
+            </view>
+        </view>
+        <view class="user_vanish" catch:tap="dontShow">
+            <image class="" src="../../images/others-blog/vanish.png"></image>
+        </view>
+    </view>
+    <view class="blog-content">{{content}}</view>
+    <view class="blog-img">
+        <block wx:for="{{blog.img}}" wx:key="index">
+            <!-- catch绑定事件可以阻止事件冒泡 -->
+            <image class="img" src="{{item}}" mode="aspectFill" catch:tap="onPreview" data-index="{{index}}" data-imgs="{{blog.img}}"></image>
+        </block>
+    </view>
+    <view class="blog-more" >
+        <view class="" hover-class="none">
+            <image class="" src="../../images/others-blog/share.png"></image>
+            <text class="">{{blog.share.length}}</text>
+        </view>
+        <view class="" hover-class="none">
+            <image class="" src="../../images/others-blog/talk.png"></image>
+            <text class="">{{blog.comment.length}}</text>
+        </view>
+        <view class="" hover-class="none">
+            <image class="" src="../../images/others-blog/goods.png"></image>
+            <text class="">{{blog.goods.length}}</text>
+        </view>
+    </view>
+</view>

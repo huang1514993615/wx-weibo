@@ -1,0 +1,22 @@
+<view class="container">
+		<!-- 不限制输入内容 maxLength="-1" 原生组件 层级最高 -->
+		<textarea placeholder="请输入标题(必填，最多30字)" class="content titlie" bindinput="onTitlieInput" focus="true" bindfocus="onFocus" bindblur="onBlur" maxlength="30"></textarea>
+		<textarea placeholder="请输入内容(最多140字)" class="content" bindinput="onInput" bindfocus="onFocus" bindblur="onBlur" maxlength="140"></textarea>
+		<view class="image-list">
+				<!-- 显示视频 -->
+				<view class="image-wrap" hidden="{{selectPhoto}}">
+						<i class="iconfont icon-shanchu" bindtap="onDelImage"></i>
+						<video id="myVideo" src="{{videoUrl}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' bindleavepictureinpicture='bindVideoLeavePictureInPicture'></video>
+				</view>
+				<!-- 选择s视频 -->
+				<view class="image-wrap" bindtap="onChooseVideo" hidden="{{!selectPhoto}}">
+						<i class="iconfont icon-jiahao add"></i>
+				</view>
+		</view>
+</view>
+<view class="footer" style="bottom:{{footerBottom}}px">
+		<text class="words-num">{{titleNum}}</text>
+		<text class="words-num">{{wordsNum}}</text>
+		<button class="send-btn" bindtap="send">发布</button>
+</view>
+<y-login modalShow="{{modalShow}}" bind:loginsuccess="onloginSuccess" bind:loginfail="onloginFail"></y-login>

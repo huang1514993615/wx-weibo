@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-interest": "/components/interest/interest"
+  },
+  "navigationBarTitleText": "发现用户"
+}

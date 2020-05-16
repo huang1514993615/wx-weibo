@@ -1,0 +1,50 @@
+<view class="searchFriend">
+		<view class="search_bar">
+				<view class="search_btn" bindtap="searchShow">
+						<image class="" src="../../images/find/search.png"></image>
+						<text class="">找想找的人</text>
+				</view>
+				<view class="search_more">
+						<view class="search_classify">
+								<text class="search_more_up">领域分类</text>
+								<text class="search_more_dowm">最热博主名单</text>
+						</view>
+						<view class="search_people">
+								<text class="search_more_up">热点人物</text>
+								<text class="search_more_dowm">最强IP集合</text>
+						</view>
+						<view class="search_bigV">
+								<text class="search_more_up">本地大V</text>
+								<text class="search_more_dowm">本地知名博主</text>
+						</view>
+						<view class="search_start">
+								<text class="search_more_up">娱乐明星</text>
+								<text class="search_more_dowm">他们都在微博</text>
+						</view>
+						<view class="search_media">
+								<text class="search_more_up">媒体</text>
+								<text class="search_more_dowm">资讯一网打尽</text>
+						</view>
+						<view class="search_address">
+								<text class="search_more_up">通讯录好友</text>
+								<text class="search_more_dowm">快速发现好友</text>
+						</view>
+				</view>
+		</view>
+		<view class="search_territory">
+				<view class="search_interest">
+						<text class="">兴趣领域</text>
+						<image class="" src="../../images/find/arrow.png"></image>
+				</view>
+		</view>
+		<block wx:for="{{interest}}">
+				<y-interest interest="{{item}}"></y-interest>
+		</block>
+		<view class="{{isShowSearch==true?'show search_really':'search_really'}}">
+				<view class="search_really_input">
+						<image class="" src="../../images/find/search.png"></image>
+						<input type="text" placeholder="搜索" />
+						<text class="" bindtap="searchHiddle">取消</text>
+				</view>
+		</view>
+</view>
